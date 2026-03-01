@@ -1,0 +1,22 @@
+{
+  "name": "ralph-mayor",
+  "version": "1.0.0",
+  "description": "Ralph Mayor planning bridge: natural language goal -> rig scan -> beads -> RALPH_PLAN.md",
+  "author": "ralph-mayor",
+  "commands": [
+    {
+      "name": "ralphify",
+      "description": "Convert a goal into a local RalphEx execution plan",
+      "usage": "/ralphify <goal>",
+      "arguments": [
+        {
+          "name": "goal",
+          "type": "string",
+          "required": true,
+          "description": "Natural language goal to convert into atomic beads"
+        }
+      ],
+      "run": "bash scripts/ralphify \"$goal\""
+    }
+  ]
+}
